@@ -62,5 +62,25 @@ def food_Calculator(foodamount, tip=.20):
 
 #print(food_Calculator(100, .30))
 
+#print(bigger_guy(4,3));
 
-print(bigger_guy(4,3));
+#4----------------------
+#lambda -> allows to create and anonyms function
+
+# implecet return -> automatically return
+# sum2: int = lambda a,b: a+b
+#print(sum2);
+
+# sum3: int = lambda: a,b,c:
+#   sum = a+b;
+#   sum*=c;
+#   return sum;
+
+
+# 5------------
+# testing
+def sum(a: int, b: int):
+    return a + b
+
+
+assert sum(2, 1) == 3, "write for debug..."
