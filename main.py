@@ -182,5 +182,44 @@ ar = lambda arr: list(set(arr));
 
 
 
-for a in programming_lan:
-  print(a)  
+# for a in programming_lan:
+#   print(a)  
+
+def double_fun(num: list)->list:
+  counter = 0;
+  while counter<len(num):
+    num[counter] = (num[counter] + num[counter])
+    counter+=1
+  return num
+
+
+#arr = double_fun([1,2,3,4])
+#print(arr);
+
+# def countwords(arr: str)->int:
+#   n = len(arr)
+#   i = 0;
+#   sp = 0;
+#   while i < n:
+#     if i!=0 and i!=n-1:
+#       if arr[i] == ' ':
+#         sp+=1;
+#     i+=1
+#   return sp
+# arr = "HI MY NAME IS M UMER"
+# print("Total Spaces", countwords(arr))
+
+def word_frequency(arr: str)->dict :
+  di = {}
+  i=0;
+  n = len(arr)
+  while i < n :
+    if arr[i] not in di.keys():
+      di[arr[i]]=1
+    else:
+      di[arr[i]]+=1
+    i+=1
+    
+  return di;
+
+print(word_frequency("I LOVE BATMAN BECAUSE I AM BATMAN"))
