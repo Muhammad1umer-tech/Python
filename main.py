@@ -84,3 +84,103 @@ def sum(a: int, b: int):
 
 
 assert sum(2, 1) == 3, "write for debug..."
+
+# print("huh")
+
+#list
+
+fruit = ['cake', 'pear', 'banana', 'banana']
+#list has no problem with specific datatype. ['cake', 'pear','banana', 'banana', 1,2,3.5, [4,3] ]
+
+# print(fruit)
+
+#method fruit.append()
+#['cake', 'pear','banana', 'banana']
+#0 1 2 3 4 ->  ,  <- -4 -3 -2 -1
+
+# slicing
+# to access only specific use fruirts[0:2];
+#to get length len(fruits)
+#reverse the array.
+#fruits[::-1]
+
+#fruits[0:5:1]
+#      from : till : step by (a++, a+=2, a+=2).
+
+# appendm insert, clear, index, count, remove, sort, pop, reversed
+
+#7 dictionary. is like map
+
+
+def introducer():
+    person = {
+        'name': 'Qazi',
+        'shirt': 'black',
+        'laptop': 'apple',
+      'phone number' : "0310301313",
+        'assets': 100,
+        'debt': 50,
+        'favorite_fruits': ['banana', 'apple'],
+        'networth': lambda: person['assets'] - person['debt']
+    }
+    print(
+        f"Hi, my name is {person['name']}, Hi, a shirt that i am wearing is {person['shirt']}, my favorites fruits are {person['favorite_fruits'][0]} , and my networth is {person['networth']()}"
+    )
+
+
+#introducer()
+
+#method 
+person = {
+        'name': 'Qazi',
+        'shirt': 'black',
+        'laptop': 'apple',
+      'phone number' : "0310301313",
+        'assets': 100,
+        'debt': 50,
+        'favorite_fruits': ['banana', 'apple'],
+        'networth': lambda: person['assets'] - person['debt']
+    }
+person['assets']=1000
+# print(person.values());
+  #dictionary is ordered
+
+#list and dictionary are mutable (Can change them).
+#touples are unmutables.
+
+
+#8---------------> touples
+
+numbers = (1,2);
+# print(numbers)
+
+#9--------------> sets{} used for unique elements
+
+programming_lan1 = ['ruby','javascript','python','react']
+programming_lan2 = ['ruby','javascript','python','c++']
+
+programming_lan = set(programming_lan1 + programming_lan2)
+
+
+
+
+# print(programming_lan)
+
+# ruby in programming_lan.
+
+def unique(arr: list)->list: 
+  arr = set(arr);
+  return list(arr)
+
+arr = ['ruby', 'python', 'python'];
+
+
+ar = lambda arr: list(set(arr));
+
+
+# print(ar)
+
+
+
+for a in programming_lan:
+  print(a)  
